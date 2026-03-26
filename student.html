@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Students</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>Manage Students</h2>
+        <button id="addBtn">ADD NEW STUDENT</button>
+    </div>
+
+    <div class="filters">
+        <input type="text" id="filterName" placeholder="Filter by Name (eg. David)">
+        <input type="text" id="filterClass" placeholder="Filter by Class (eg. 4A)">
+    </div>
+
+    <div id="studentList" class="student-list">
+        <!-- Student Cards Injected Here -->
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="studentModal" class="modal">
+    <div class="modal-content">
+        <h3 id="modalTitle">Add Student</h3>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="email" id="emailInput" placeholder="Email">
+        <input type="text" id="classInput" placeholder="Class">
+        <div class="modal-buttons">
+            <button id="saveStudent">Save</button>
+            <button id="closeModal">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="student.js"></script>
+</body>
+</html>
